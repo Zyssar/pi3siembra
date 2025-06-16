@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_title">Bem-vindo</string>
+    <string name="welcome_message">Obrigado por se juntar a nós. Escolha seu idioma para continuar.</string>
+    <string name="button_continue">Continuar</string>
+</resources>

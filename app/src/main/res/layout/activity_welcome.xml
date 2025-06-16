@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        tools:context=".WelcomeActivity">
+
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/welcome_message"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeTitle" />
+
+        <RadioGroup
+            android:id="@+id/languageRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/welcomeMessage">
+
+            <RadioButton
+                android:id="@+id/radio_ay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="ay"
+                android:text="Aymara" />
+
+            <RadioButton
+                android:id="@+id/radio_cni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="cni"
+                android:text="Asháninka" />
+
+            <RadioButton
+                android:id="@+id/radio_de"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="de"
+                android:text="Deutsch (German)" />
+
+            <RadioButton
+                android:id="@+id/radio_en"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="en"
+                android:text="English" />
+
+            <RadioButton
+                android:id="@+id/radio_es"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="es"
+                android:text="Español" />
+
+            <RadioButton
+                android:id="@+id/radio_pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="pt"
+                android:text="Português" />
+
+            <RadioButton
+                android:id="@+id/radio_qu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="qu"
+                android:text="Quechua" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/button_continue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/languageRadioGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
