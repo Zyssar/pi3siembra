@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_title">Kavintsari!</string>
+    <string name="welcome_message">Pasonki pitsarovantaiterori. Pimpampitera añaantiki.</string>
+    <string name="button_continue">Añaa</string>
+</resources>

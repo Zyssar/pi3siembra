@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_title">Welcome!</string>
+    <string name="welcome_message">Thanks for joining. Choose your language to continue.</string>
+    <string name="button_continue">Continue</string>
+</resources>

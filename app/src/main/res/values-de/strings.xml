@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_title">Willkomen!</string>
+    <string name="welcome_message">Danke, dass Sie sich uns angeschlossen haben. Wählen Sie Ihre Sprache, um fortzufahren.</string>
+    <string name="button_continue">Weiter</string>
+</resources>
