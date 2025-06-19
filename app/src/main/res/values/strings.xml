@@ -3,4 +3,7 @@
     <string name="welcome_title">¡Bienvenido!</string>
     <string name="welcome_message">Gracias por unirte. Elige tu idioma para continuar.</string>
     <string name="button_continue">Continuar</string>
+    <string name="seed_prev">Semilla anterior</string>
+    <string name="seed_current">Semilla seleccionada</string>
+    <string name="seed_next">Semilla siguiente</string>
 </resources>

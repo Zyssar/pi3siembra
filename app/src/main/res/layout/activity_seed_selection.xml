@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Settings/config button top-right -->
+    <ImageButton
+        android:id="@+id/btn_config"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_settings"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Horizontal group: left, center, right bubbles -->
+    <!-- Left bubble -->
+    <FrameLayout
+        android:id="@+id/bubble_left"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_bg_small"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/seed_name"
+        app:layout_constraintEnd_toStartOf="@+id/bubble_center"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/seed_image_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/seed_prev"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <!-- Center bubble -->
+    <FrameLayout
+        android:id="@+id/bubble_center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_bg"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/seed_name"
+        app:layout_constraintEnd_toStartOf="@+id/bubble_right"
+        app:layout_constraintStart_toEndOf="@+id/bubble_left"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/seed_image_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/seed_current"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <!-- Right bubble -->
+    <FrameLayout
+        android:id="@+id/bubble_right"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_bg_small"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@+id/seed_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bubble_center"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/seed_image_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/seed_next"
+            android:scaleType="centerCrop" />
+    </FrameLayout>
+
+    <!-- Seed name -->
+    <TextView
+        android:id="@+id/seed_name"
+        android:layout_width="377dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bubble_center" />
+
+    <!-- Seed info -->
+    <TextView
+        android:id="@+id/seed_info"
+        android:layout_width="377dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seed_name" />
+
+    <!-- Approximate time -->
+    <TextView
+        android:id="@+id/seed_time"
+        android:layout_width="365dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seed_info" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

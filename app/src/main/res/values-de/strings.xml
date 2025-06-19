@@ -3,4 +3,7 @@
     <string name="welcome_title">Willkomen!</string>
     <string name="welcome_message">Danke, dass Sie sich uns angeschlossen haben. Wählen Sie Ihre Sprache, um fortzufahren.</string>
     <string name="button_continue">Weiter</string>
+    <string name="seed_prev">vorherige Saat</string>
+    <string name="seed_current">ausgewählter Samen</string>
+    <string name="seed_next">nächster Samen</string>
 </resources>

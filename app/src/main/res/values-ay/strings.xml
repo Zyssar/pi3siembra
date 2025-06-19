@@ -3,4 +3,7 @@
     <string name="welcome_title">Aski jutaw!</string>
     <string name="welcome_message">Yuspagara jikthaptatamat. Ajlliñani arunaka saraqasina.</string>
     <string name="button_continue">Saraqasiñani</string>
+    <string name="seed_prev">Nayra jatha</string>
+    <string name="seed_current">Ajllit jatha</string>
+    <string name="seed_next">Jutïr jatha</string>
 </resources>

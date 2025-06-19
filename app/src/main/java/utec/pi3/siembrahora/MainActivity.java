@@ -1,7 +1,10 @@
 package utec.pi3.siembrahora;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 
 // You need to import the binding class for your layout.
 // It's named based on your XML file, e.g., activity_main.xml -> ActivityMainBinding
@@ -36,6 +39,11 @@ public class MainActivity extends BaseActivity {
         NativeBridge.logScreenView("MainActivity");
 
         // Example of a call to a native method
-        binding.sampleText.setText(stringFromJNI());
+        new Handler().postDelayed(() -> {
+            Intent intent = new Intent(MainActivity.this, SeedSelectionActivity.class);
+            startActivity(intent);
+            finish(); // Opcional: si no quieres volver a MainActivity con el botón "atrás"
+        }, 500); // delay opcional de 500ms
+
     }
 }

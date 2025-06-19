@@ -3,4 +3,7 @@
     <string name="welcome_title">Welcome!</string>
     <string name="welcome_message">Thanks for joining. Choose your language to continue.</string>
     <string name="button_continue">Continue</string>
+    <string name="seed_prev">Previous seed</string>
+    <string name="seed_current">Selected seed</string>
+    <string name="seed_next">Next seed</string>
 </resources>

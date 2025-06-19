@@ -3,4 +3,7 @@
     <string name="welcome_title">Allinllachu hamusqayki!</string>
     <string name="welcome_message">Añay por ununki. Akllay simiykita qatinaykipaq.</string>
     <string name="button_continue">Qatiy</string>
+    <string name="seed_prev">Ñawpaq muhu</string>
+    <string name="seed_current">Akllasqa muhu</string>
+    <string name="seed_next">Qatiq muhu</string>
 </resources>

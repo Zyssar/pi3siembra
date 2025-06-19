@@ -3,4 +3,7 @@
     <string name="welcome_title">Kavintsari!</string>
     <string name="welcome_message">Pasonki pitsarovantaiterori. Pimpampitera añaantiki.</string>
     <string name="button_continue">Añaa</string>
+    <string name="seed_prev">Shirampari tsipori</string>
+    <string name="seed_current">Shirampari irentsite</string>
+    <string name="seed_next">Shirampari ipokite</string>
 </resources>

@@ -5,12 +5,12 @@
 
 std::unique_ptr<TelemetryManager> telemetryManager;
 
+
 extern "C" JNIEXPORT jstring JNICALL
 Java_utec_pi3_siembrahora_MainActivity_stringFromJNI(JNIEnv* env, jobject /* this */) {
     std::string hello = "Hello from C++";
     return env->NewStringUTF(hello.c_str());
 }
-
 extern "C" {
 
 // Notice ALL function names now end with "Native" to match NativeBridge.java
